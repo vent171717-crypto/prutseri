@@ -10,7 +10,7 @@ const rateLimit = require('express-rate-limit');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const config = { DATA_FILE: process.env.DATA_FILE || 'data.json' };
+const config = { DATA_FILE: process.env.DATA_FILE || 'data1.json','data2.json','data3.json' };
 
 // ===== OPTIMIZACIÓN 1: Compresión SOLO para contenido que lo necesita =====
 app.use(compression({
